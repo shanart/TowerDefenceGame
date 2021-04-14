@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
-
 public class Bullet : MonoBehaviour
 {
 
     private Transform target;
+
     public float speed = 70f;
     public GameObject impactEffect;
 
@@ -20,7 +20,7 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-        
+
         Vector3 dir = target.position - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
 
@@ -35,7 +35,7 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
-        GameObject effectIns = (GameObject)Instantiate(impactEffect.gameObject, transform.position, transform.rotation);
+        GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 2f);
         Destroy(target.gameObject);
         Destroy(gameObject);
