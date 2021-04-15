@@ -4,10 +4,10 @@ public class Node : MonoBehaviour
 {
 
     public Color hoverColor;
-
+    public Vector3 positionOffset;
+    private GameObject turret;    
     private Renderer rend;
     private Color startColor;
-    private bool hovered = false;
     
     void Start ()
     {
@@ -15,24 +15,30 @@ public class Node : MonoBehaviour
 		startColor = rend.material.color;
     }
 
+    // Press mouse btn while hovering on the object
+    void OnMouseDown()
+    {
+        if (turret != null)
+        {
+            Debug.Log("Can't build there! - TODO: Display on screen");
+            return;
+        }
+
+        // Build a turret
+        GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+    }
+
     void OnMouseEnter()
     {
         rend.material.color = hoverColor;
-        hovered = true;
+        Debug.Log("OnMouseEnter");
     }
 
     void OnMouseExit ()
     {
         rend.material.color = startColor;
-        hovered = false;
     }
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0) && hovered == true) 
-        {
-            Debug.Log("Pressed primary button.");
-        }
-
-    }
+   
 }
