@@ -2,15 +2,16 @@
 
 public class BuildManager : MonoBehaviour
 {
-    
+
     private GameObject turretToBuild;
 
     public static BuildManager instance;
     public GameObject standardTurretPrefab;
+    public GameObject anotherTurretPrefab;
 
     void Awake()
     {
-        if ( instance != null)
+        if (instance != null)
         {
             Debug.LogError("More than one BuildManager in scene!");
         }
@@ -22,9 +23,9 @@ public class BuildManager : MonoBehaviour
         return turretToBuild;
     }
 
-    void Start() 
+    public void SetTurretToBuild(GameObject turret)
     {
-        turretToBuild = standardTurretPrefab;
+        turretToBuild = turret;
     }
 
 }
