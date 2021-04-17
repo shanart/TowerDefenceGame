@@ -7345,7 +7345,7 @@ Transform:
   - {fileID: 1279217325}
   - {fileID: 804607233}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1081012964
 PrefabInstance:
@@ -13090,6 +13090,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7874007097152807424, guid: 873115c0e4b02ec4a85987975f848d3e,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874007097152807424, guid: 873115c0e4b02ec4a85987975f848d3e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874007097152807424, guid: 873115c0e4b02ec4a85987975f848d3e,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7874007097152807424, guid: 873115c0e4b02ec4a85987975f848d3e,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -13151,7 +13166,7 @@ PrefabInstance:
     - target: {fileID: 7874007097152807425, guid: 873115c0e4b02ec4a85987975f848d3e,
         type: 3}
       propertyPath: m_Name
-      value: ShopAnotherItem
+      value: MissileLauncherItem
       objectReference: {fileID: 0}
     - target: {fileID: 7874007097152807426, guid: 873115c0e4b02ec4a85987975f848d3e,
         type: 3}
@@ -13161,13 +13176,19 @@ PrefabInstance:
     - target: {fileID: 7874007097152807426, guid: 873115c0e4b02ec4a85987975f848d3e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchaseAnotherTurret
+      value: PurchaseMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 7874007097152807426, guid: 873115c0e4b02ec4a85987975f848d3e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7874007097152807429, guid: 873115c0e4b02ec4a85987975f848d3e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9da525023d18468469d0c85671c485f3,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 873115c0e4b02ec4a85987975f848d3e, type: 3}
 --- !u!1001 &1762468385
@@ -14226,7 +14247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 2495783517916027361, guid: 60417791c940450459a367564cc99757,
     type: 3}
-  anotherTurretPrefab: {fileID: 2495783517916027361, guid: 60417791c940450459a367564cc99757,
+  missileLauncherPrefab: {fileID: 5561647126714251650, guid: 4ce2a3fed5b77ef45b1cd5d123f8afa5,
     type: 3}
 --- !u!1001 &1858869494
 PrefabInstance:
@@ -14693,7 +14714,7 @@ PrefabInstance:
     - target: {fileID: 1230671759908244974, guid: 953d561c6b013fd41b6de3976193f36a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1230671759908244974, guid: 953d561c6b013fd41b6de3976193f36a,
         type: 3}
@@ -17440,6 +17461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: -542.02075
+      objectReference: {fileID: 0}
+    - target: {fileID: 831259089737742250, guid: e72435b749b29874dabcae8180f38ce5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 831259089737742250, guid: e72435b749b29874dabcae8180f38ce5,
         type: 3}
