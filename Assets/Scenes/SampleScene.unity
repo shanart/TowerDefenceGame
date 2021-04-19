@@ -17532,6 +17532,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 3641286122659337467, guid: e72435b749b29874dabcae8180f38ce5,
+        type: 3}
+      propertyPath: standardTurret.cost
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3641286122659337467, guid: e72435b749b29874dabcae8180f38ce5,
+        type: 3}
+      propertyPath: missileLauncher.cost
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 3641286122659337467, guid: e72435b749b29874dabcae8180f38ce5,
+        type: 3}
+      propertyPath: standardTurret.prefab
+      value: 
+      objectReference: {fileID: 2495783517916027361, guid: 60417791c940450459a367564cc99757,
+        type: 3}
+    - target: {fileID: 3641286122659337467, guid: e72435b749b29874dabcae8180f38ce5,
+        type: 3}
+      propertyPath: missileLauncher.prefab
+      value: 
+      objectReference: {fileID: 5561647126714251650, guid: 4ce2a3fed5b77ef45b1cd5d123f8afa5,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e72435b749b29874dabcae8180f38ce5, type: 3}
 --- !u!114 &831259088522745876 stripped
